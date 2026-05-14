@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  max-width: 100%;
+  margin: 0 110px;
+  color: white;
+  background-image: url("../img/limeirinha.jpg");
+  
+}
+header{
+  background-color: rebeccapurple;
+  background: linear-gradient(90deg, rgba(149, 117, 205, 0.8), rgba(0, 51 , 102, 0.8));
+  margin: 0 -110px;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  
+  
+  
+}
+.loguinho {
+  width: 60px;
+  height: auto;
+  margin: 10px 50px;
+  top: 10px;
+}
+
+nav ul{
+  display: inline-block;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0 80px;
+  
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 10px;
+  
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white
+  
+}
+
+/* Estilização básica da lista */
+.menu {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+  
+    
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.3s ease; /* Suaviza a animação */
+}
+
+/* O Efeito Hover */
+.menu li a:hover {
+    background-color: #6c5ce7; /* Roxo principal */
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4); /* Brilho neon suave */
+    transform: translateY(-3px); /* Leve subida ao passar o mouse */
+}
+
+/* Opcional: Efeito de linha subindo */
+.menu li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #a29bfe; /* Roxo mais claro para contraste */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.menu li a:hover::after {
+    width: 70%;
+}
+
+
+#oi {
+  font-size: 30px;
+  font-weight: bold;
+
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #b46cff 45%,
+    #7b4dff 70%,
+    #4f46ff 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: 
+}
+
+.meu-nome {
+  text-align: left;
+  font-size: 70px;
+  
+}
+.sobrenome {
+  text-align: left;
+  font-size: 70px;
+  font-weight: bold;
+  
+
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #b46cff 45%,
+    #7b4dff 70%,
+    #4f46ff 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  text-align: left;
+}
+p {
+  text-align: left;
+  font-size: 20px;
+}
+main{
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+  background-image: no repet;
+  position: relative;
+  width: 100%;
+}
+
+#text {
+  text-align: left;
+  width: 50%;
+  
+}
+
+.btn-projetos {
+  /* Cores e Gradiente */
+  background: linear-gradient(to right, #6a5acd, #9370db);
+  color: white;
+  
+  /* Estilização e Forma */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* Cantos arredondados */
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  
+  /* Alinhamento do Ícone e Texto */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.3s;
+}
+
+/* Simulação do Ícone (pode usar FontAwesome ou SVG) */
+.icon {
+  width: 18px;
+  height: 14px;
+  border: 2px solid white;
+  border-radius: 3px;
+  position: relative;
+}
+
+.icon::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  border-left: 5px solid white;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.botao {
+  display: flex;
+  margin-left: 0;
+  gap: 30px;
+  
+}
+
+.btn-projetos:hover {
+  opacity: 0.9;
+}
+
+.btn-contato {
+  background: transparent;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  
+  /* Borda Gradiente */
+  border: 2px solid transparent;
+  border-image-source: linear-gradient(to right, #6a11cb, #2575fc);
+  border-image-slice: 1;
+  
+  /* Ajuste para borda arredondada com gradiente */
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #7b2ff7, #2d90ff) 1;
+  
+  transition: transform 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+.btn-contato:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.icon {
+  font-size: 20px;
+  /* Gradiente no ícone */
+  background: linear-gradient(to bottom, #7b2ff7, #2d90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social-container {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  justify-content: ;
+}
+
+.social-icon1, .social-icon2, .social-icon3 {
+  
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Borda fina e discreta */
+  border-radius: 50%; /* Torna o elemento circular */
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icon1{
+  background-image: url("../img/git2.jpg");
+}
+.social-icon2{
+  background-image: url("../img/images.jpg");
+}
+.social-icon3{
+  background-image: url("../img/insta1.jpg");
+  color: white;
+}
+
+/* Efeito ao passar o mouse */
+.social-icon1:hover, 
+.social-icon2:hover, 
+.social-icon3:hover {
+  border-color: #fff;
+  transform: scale(1.1);
+}
+
+
+
+.foto1{
+  
+  
+}
+#foto {
+  width: 330px;
+  height: auto;
+  align-items: center;
+  margin-top: -50px;
+  
+  
+}
+
+
+
