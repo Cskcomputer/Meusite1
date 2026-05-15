@@ -57,6 +57,8 @@ nav ul li a{
     list-style: none;
     display: flex;
     margin-top: 20px;
+    font-family: sans-serif;
+    
   
     
 }
@@ -70,6 +72,7 @@ nav ul li a{
     border-radius: 8px;
     position: relative;
     transition: all 0.3s ease; /* Suaviza a animação */
+    
 }
 
 /* O Efeito Hover */
@@ -99,20 +102,18 @@ nav ul li a{
 
 
 #oi {
-  font-size: 30px;
-  font-weight: bold;
-
-  background: linear-gradient(
+    font-size: 30px;
+    background: linear-gradient(
     90deg,
-    #ffffff 0%,
-    #b46cff 45%,
+  
+    #b46cff 10%,
     #7b4dff 70%,
     #4f46ff 100%
   );
-
   -webkit-background-clip: text;
-  -webkit-text-fill-color: 
+  -webkit-text-fill-color: transparent;
 }
+
 
 .meu-nome {
   text-align: left;
@@ -127,14 +128,18 @@ nav ul li a{
 
   background: linear-gradient(
     90deg,
-    #ffffff 0%,
-    #b46cff 45%,
+  
+    #b46cff 10%,
     #7b4dff 70%,
     #4f46ff 100%
   );
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 70px;
 }
 
 h2 {
@@ -145,6 +150,7 @@ p {
   font-size: 20px;
 }
 main{
+  font-family: sans-serif;
   display: flex;
   margin-top: 50px;
   justify-content: space-around;
@@ -156,7 +162,14 @@ main{
 #text {
   text-align: left;
   width: 50%;
+  font-family: sans-serif;
   
+}
+
+.pp{
+  text-decoration: none;
+  color: white;
+
 }
 
 .btn-projetos {
@@ -252,7 +265,7 @@ main{
   display: flex;
   gap: 20px;
   padding: 10px;
-  justify-content: ;
+  
 }
 
 .social-icon1, .social-icon2, .social-icon3 {
