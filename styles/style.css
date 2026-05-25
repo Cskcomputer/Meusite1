@@ -6,9 +6,9 @@
 }
 body {
   max-width: 100%;
-  margin: 0 110px;
+  padding: 0 80px;
   color: white;
-  background-image: url("../img/limeirinha.jpg");
+  background: #050816;
   
 }
 header{
@@ -35,7 +35,6 @@ nav {
 nav ul{
   display: inline-block;
   list-style: none;
-  justify-content: flex-end;
   margin: 0 80px;
   
 }
@@ -124,9 +123,7 @@ nav ul li a{
   text-align: left;
   font-size: 70px;
   font-weight: bold;
-  
-
-  background: linear-gradient(
+   background: linear-gradient(
     90deg,
   
     #b46cff 10%,
@@ -149,14 +146,36 @@ p {
   text-align: left;
   font-size: 20px;
 }
+
+
 main{
   font-family: sans-serif;
   display: flex;
   margin-top: 50px;
   justify-content: space-around;
-  background-image: no repet;
   position: relative;
   width: 100%;
+  background-repeat: no repet;
+
+}
+
+.fundinho{
+  background-color:#080816;
+  background-image:
+  linear-gradient(
+    90deg,
+    rgba(8,8,22,1) 20%,
+    rgba(8,8,22,.7) 45%,
+    rgba(8,8,22,0) 70%
+  ),
+  url("../img/1799.png");
+
+  display:flex;
+  background-size:1000px auto;
+  background-repeat:no-repeat;
+  background-position:right;
+  margin-right:-80px;
+  padding:20px 0;
 }
 
 #text {
@@ -303,19 +322,218 @@ main{
   transform: scale(1.1);
 }
 
-
-
-.foto1{
+ 
   
-  
-}
 #foto {
   width: 330px;
   height: auto;
-  align-items: center;
   margin-top: -50px;
   
   
+  
+}
+
+
+<!-- SEGUNDA SESSÃO -->
+
+
+
+.session-part2{
+  background-color:#080816;
+  background-image:
+  linear-gradient(
+    90deg,
+    rgba(8,8,22,1) 20%,
+    rgba(8,8,22,.7) 45%,
+    rgba(8,8,22,0) 70%
+  ),
+  url("../img/1799.png");
+
+  display:flex;
+  background-size:1000px auto;
+  background-repeat:no-repeat;
+  background-position:right;
+  margin-right:-80px;
+  padding:20px 0;
+}
+
+
+
+
+
+.stats-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+  /*flex-wrap: wrap; */ /*desavke */
+}
+
+.stat-card {
+  background: linear-gradient(to right, #6a5acd, #9370db);
+  border: 1px solid #1a1a2e; /* Borda sutil */
+  border-radius: 12px;
+  padding: 30px;
+  width: 200px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+  opacity: 0.9; 
+}
+
+.icon {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 15px;
+  /* Para ícones coloridos como na imagem, você usaria SVGs */
+}
+
+.number {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.plus {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.label {
+  color: #94a3b8; /* Cinza claro para o texto */
+  font-size: 14px;
+  margin: 0;
+}
+
+.titulo4{
+  text-align: center
+  
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaço entre os blocos */
+  padding: 40px;
+  /*flex-wrap: wrap; /* Faz os blocos quebrarem de linha em telas menores */
+}
+
+.card {
+  background: linear-gradient(to right, #6a5acd, #9370db);
+  color: white;
+  border: 1px solid #2a2a4a; 
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+.card a {
+  color: #a29bfe;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+
+
+
+
+.portfolio {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.card {
+  background-color: #0a0a1a;
+  border: 1px solid #1e1e3f;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.5rem;
+}
+
+.card p {
+  color: #a0a0c0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #8a4fff; /* Roxo do link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.portfolio {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.card {
+  background-color: #0a0a1a;
+  border: 1px solid #1e1e3f;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.5rem;
+}
+
+.card p {
+  color: #a0a0c0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #8a4fff; /* Roxo do link */
+  text-decoration: none;
+  font-weight: bold;
 }
 
 
