@@ -4,6 +4,7 @@
   box-sizing: border-box;
   
 }
+
 body {
   max-width: 100%;
   padding: 0 80px;
@@ -11,20 +12,17 @@ body {
   background: #050816;
   
 }
+
 header{
   background-image: linear-gradient(180deg, rgba(106, 65, 147, 0.8), rgba(5, 8, 22, 0.8));
-  margin: 0 -110px;
-  
+  margin: 0 -110px;  
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
-  
-  
-  
-  
+  justify-content: space-between;  
 }
+
 .loguinho {
   width: 60px;
   height: auto;
@@ -35,83 +33,76 @@ nav {
 nav ul{
   display: inline-block;
   list-style: none;
-  margin: 0 80px;
-  
+  margin: 0 80px;  
 }
 
 nav ul li{
   display: inline-block;
   padding: 10px;
-  
 }
 
 nav ul li a{
   text-decoration: none;
-  color: white
-  
+  color: white;  
 }
 
 /* Estilização básica da lista */
 .menu {
-    list-style: none;
-    display: flex;
-    margin-top: 20px;
-    font-family: sans-serif;
-    
-  
-    
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  font-family: sans-serif;
 }
 
 .menu li a {
-    text-decoration: none;
-    color: #e0e0e0;
-    font-family: sans-serif;
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: 8px;
-    position: relative;
-    transition: all 0.3s ease; /* Suaviza a animação */
+  text-decoration: none;
+  color: #e0e0e0;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s ease; /* Suaviza a animação */
     
 }
 
 /* O Efeito Hover */
 .menu li a:hover {
-    background-color: #6c5ce7; /* Roxo principal */
-    color: #fff;
-    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4); /* Brilho neon suave */
-    transform: translateY(-3px); /* Leve subida ao passar o mouse */
+  background-color: #6c5ce7; /* Roxo principal */
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4); /* Brilho neon suave */
+  transform: translateY(-3px); /* Leve subida ao passar o mouse */
 }
 
 /* Opcional: Efeito de linha subindo */
 .menu li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: #a29bfe; /* Roxo mais claro para contraste */
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #a29bfe; /* Roxo mais claro para contraste */
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
 }
 
 .menu li a:hover::after {
-    width: 70%;
+  width: 70%;
 }
 
-
 #oi {
-    font-size: 30px;
-    background: linear-gradient(
-    90deg,
-  
-    #b46cff 10%,
-    #7b4dff 70%,
-    #4f46ff 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  background: linear-gradient(
+  90deg,
+
+  #b46cff 10%,
+  #7b4dff 70%,
+  #4f46ff 100%
+);
+ -webkit-background-clip: text;
+ background-clip: text;
+ -webkit-text-fill-color: transparent;
 }
 
 
@@ -150,7 +141,6 @@ p {
   width: 90%;
 }
 
-
 main{
   font-family: sans-serif;
   display: flex;
@@ -160,8 +150,7 @@ main{
   width: 100%;
   background-repeat: no repeat;
   box-sizing: border-box;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap;  
 }
 
 .linha-total, .linha-total1, .linha-total2 {
@@ -187,21 +176,18 @@ main{
   background-size:1000px auto;
   background-repeat:no-repeat;
   background-position:right;
-  width: 100%;
-  
+  width: 100%; 
 }
 
 #text {
   text-align: left;
   width: 50%;
-  font-family: sans-serif;
-  
+  font-family: sans-serif; 
 }
 
 .pp{
   text-decoration: none;
   color: white;
-
 }
 
 .btn-projetos {
@@ -247,8 +233,7 @@ main{
 .botao {
   display: flex;
   margin-left: 0;
-  gap: 30px;
-  
+  gap: 30px;  
 }
 
 .btn-projetos:hover {
@@ -297,12 +282,10 @@ main{
 .social-container {
   display: flex;
   gap: 20px;
-  padding: 10px;
-  
+  padding: 10px;  
 }
 
 .social-icon1, .social-icon2, .social-icon3 {
-  
   background-position: center;
   background-size: cover;
   display: flex;
@@ -329,30 +312,22 @@ main{
 }
 
 /* Efeito ao passar o mouse */
-.social-icon1:hover, 
-.social-icon2:hover, 
-.social-icon3:hover {
+.social-icon1:hover, .social-icon2:hover, .social-icon3:hover {
   border-color: #fff;
   transform: scale(1.1);
 }
 
- 
-  
 #foto {
   width: 330px;
   height: auto;
-  margin-top: -50px;
-  
-  
-  
+  margin-top: -50px; 
 }
 
 
-/* SEGUNDA SESSÃO */
+/* ------ SEGUNDA SESSÃO------- */ /*----- SEGUNDA SESSÃO----- */
 
 
 /* Conteiner pai */
-
 .section-part2{
 width: auto;
 min-height: 600px;
@@ -376,7 +351,6 @@ background-color:#080816;
 }
 
 /* conteiner filho 1 texto */
-
 .textoefundo{           /* Pai */
   display: flex;
   
