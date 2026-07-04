@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +10,17 @@
 
 body {
   max-width: 100%;
-  padding: 0 80px;
+  margin: 0 80px 0;
   color: white;
   background: #050816;
+  
   
 }
 
 header{
   background-image: linear-gradient(180deg, rgba(106, 65, 147, 0.8), rgba(5, 8, 22, 0.8));
-  margin: 0 -110px;  
+  margin-left: -80px;
+  margin-right: -80px; 
 }
 
 nav {
@@ -153,13 +158,14 @@ main{
   flex-wrap: wrap;  
 }
 
-.linha-total, .linha-total1, .linha-total2 {
-  border: 0;
-  height: px;
-  background-color: #111;
-  width: 100vw;
+.linha-total {
+  border: none;                 /* remove o estilo padrão */
+  height: 1px;                  /* define a espessura */
+  background-color: rgba(51, 11, 172, 0.1); /* branco com 30% de opacidade */
+  width: 100%;
   margin: 80px -80px;
 }
+
 
 .fundinho{
   background-color:#080816;
@@ -285,7 +291,7 @@ main{
   padding: 10px;  
 }
 
-.social-icon1, .social-icon2, .social-icon3 {
+.social-icon1, .social-icon2, .social-icon3, .social-icon4 {
   background-position: center;
   background-size: cover;
   display: flex;
@@ -310,6 +316,13 @@ main{
   background-image: url("../img/insta1.jpg");
   color: white;
 }
+
+.social-icon4{
+  background-image: url("../img/whatsapp.jpg");
+  color: white;
+}
+
+
 
 /* Efeito ao passar o mouse */
 .social-icon1:hover, .social-icon2:hover, .social-icon3:hover {
@@ -364,6 +377,7 @@ background-color:#080816;
 
 .titulo3{ 
  /* filho texto  */
+
   padding: 20px;
   text-align: center;
   min-width: 175px;
@@ -377,6 +391,7 @@ background-color:#080816;
   backdrop-filter: blur(10px);                 /* efeito de vidro fosco */
   color: #fff;                                 /* texto branco */
   box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);/* leve brilho roxo */
+
   
   
 
@@ -455,6 +470,8 @@ background-color:#080816;
   background-position:right;
 
 }
+
+
 
 /* COMEÇANDO PARTE 3 DO SITE    */
 /* COMEÇANDO PARTE 3 DO SITE    */
@@ -542,33 +559,43 @@ background-color:#080816;
   padding: 50px;
 }
 
-
 /* RODAPE DO SITE COMEÇA AQUI   */
 /* RODAPE DO SITE COMEÇA AQUI   */
 
-.final {
-  
-  background-image: linear-gradient(to bottom, transparent, #000000);
-  gap top: 60px;
-  height: 100px;
-  width: auto;
-  text-align: center;
+footer { 
+  background: linear-gradient(to bottom, #050816, black);
+  padding-top: 60px;
+  min-height: 150px;
+  border: 1px solid #e2142c;
+  display: flex;
+  justify-content: center;
   margin-left: -80px;
   margin-right: -80px;
-}
-
-.footer-content {
-  
-  margin-top: 100px;
-  text-align: center;
-  height: 60px;
-  padding: 23px;
   
 }
 
-.footer-content p {
-  text-align: center;
-  font-size: 17px;
+.final-site {
+  border: 1px solid #e2142c;
+  width: 400px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   
 }
+
+.final-site p {
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  text-align: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  
+ 
+}
+
 
