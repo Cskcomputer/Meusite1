@@ -612,8 +612,9 @@ footer {
   /* 1. Ajustes Gerais do Body */
   body {
     margin: 0; /* Remove a margem lateral de 80px no celular */
-    padding: 0 20px; /* Cria um respiro interno confortável nas laterais */
+    padding: 0 20px 0; /* Cria um respiro interno confortável nas laterais */
     overflow-x: hidden; /* Evita vazamento de layout */
+    width: 100%; /* Garante que o body ocupe toda a largura da tela */
   }
 
   /* 2. Ajustes do Topo e Menu Fixado */
@@ -717,11 +718,14 @@ footer {
 
   /* 4. Segunda Sessão (Texto + Cards de Status) */
   .section-part2 {
+    display: flex;
+    justify-content: center;
     flex-direction: column; /* Empilha o texto explicativo e os cards */
     align-items: center;
     min-height: auto;
     padding-bottom: 40px;
     background-size: cover; /* Faz o background se adaptar melhor */
+    width: 450px;
   }
 
   .textoefundo {
@@ -761,6 +765,8 @@ footer {
   /* 5. Terceira Sessão (Seus Projetos / Habilidades) */
   .section-part3 {
     background-size: cover;
+    width: 450px;
+    
   }
 
   .titulo4 h3 {
@@ -784,9 +790,10 @@ footer {
     margin-left: -20px; /* Sincroniza as margens negativas com o body */
     margin-right: -20px;
     padding-top: 10px;
+    width: 450px; /* Garante que o footer ocupe toda a largura da tela */
   }
 
   .final-site {
-    width: 90%; /* Ajusta a largura da caixinha do rodapé */
+    width: 100%; /* Ajusta a largura da caixinha do rodapé */
   }
 }
