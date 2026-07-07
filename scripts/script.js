@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Função que faz a animação do contador
   const startCounter = (counter) => {
     const target = +counter.getAttribute("data-target");
-    const duration = 100000000; // Tempo total da animação em milissegundos (2 segundos)
+    const duration = 1000000000; // Tempo total da animação em milissegundos (2 segundos)
     const increment = target / (duration / 16); // Baseado em ~60 frames por segundo
 
     const updateCount = () => {
@@ -35,3 +35,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // Ativa o observador para cada número
   counters.forEach(counter => observer.observe(counter));
 });
+
+

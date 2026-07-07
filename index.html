@@ -6,17 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="scripts/script.js"></script>
   <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="icon" type="image/png" href="img/logo.png">
   <title>Thiago Limeira</title>
 </head>
-<body>
-  <header>
+<body id="Inicio">
+  <header >
 <nav>
   <img class="loguinho" src="img/logo.png" alt="logotipo">  <!-- logotipo -->
   <ul class="menu">
-    <li id="iniciar"><a href="#">Inicio</a></li>
-    <li><a href="#">Fotos</a></li>
-    <li><a href="#">Videos</a></li>
-    <li><a href="#">Sobre</a></li>
+    <li id="iniciar"><a href="#Inicio">Inicio</a></li>
+    <li><a href="#Perfil">Perfil</a></li>
+    <li><a href="#Habilidades">Habilidades</a></li>
      
   </ul>
 </nav>
@@ -30,13 +30,13 @@
     <div class="text">    <!-- DIV DO TEXTO LADO ESQUERDO -->
     <p id="oi">Olá, eu sou</p>
     <br>
-  <h1 class="meu-nome">
+  <h1 id="nomethiago" class="meu-nome">
     Thiago <span class="sobrenome">Limeira</span>
 </h1>
 
   <br>
     
-  <h2>
+  <h2 id="titulomedia2"> <!-- ID PARA TITULO DE @MEDIA CELULAR -->
     Analista e Desenvolvedor De Site 
   </h2>
   <br><br>
@@ -46,12 +46,12 @@
   <div class="botao">     <!-- DIV DOS BOTÕES LADO ABAIXO DO TEXTO -->
     <button class="btn-projetos">
       <span class="icon"></span> 
-      <a class="pp" link href="https://github.com/Cskcomputer">Ver Projetos</a>
+      <a class="pp" link href="https://github.com/Cskcomputer ">Ver Projetos</a>
     </button>
 
     <button class="btn-contato">
       <span class="icon">✉</span>
-      Entrar em Contato
+      <a class="pp" href="https://wa.me/5561984172528?text=Ol%C3%A1%2C%20te%20respondo%20assim%20que%20poss%C3%ADvel%2C%20Thiago%20limeira" target="_blank" rel="noopener noreferrer">Entrar em Contato</a>
     </button>
   </div>
     
@@ -80,12 +80,14 @@
     
     </div>
 
-    <hr class="linha-total">
+  
    <br>
 
 </div>
 
   </main> <!-- TERMINA PRIMRA PAAGINA AQUI-->
+
+    <hr id="Perfil" class="linha-total">
   
    <br>
 
@@ -134,7 +136,7 @@
 
 </section>
 
-<hr class="linha-total">  <!-- EFEITO DE LINHA TRANSPARENTE ENTRE AS PAGINAS-->
+<hr id="Habilidades" class="linha-total">  <!-- EFEITO DE LINHA TRANSPARENTE ENTRE AS PAGINAS-->
    
 
 <!--Conteiner pai parte 3--> <!--Conteiner pai parte 3--> 
@@ -177,12 +179,10 @@
 
   <footer>
     <div class="final-site">
-      <p>2026 Meu Portfólio <br>Todos os direitos reservados
+      <p>&copy; 2026 Meu Portfólio <br>Todos os direitos reservados
       <br>Desenvolvido por Thiago Limeira</p>
     </div>
   </footer>
-
-
 
 </body>
 </html>
