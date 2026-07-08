@@ -787,10 +787,9 @@ footer {
 
   /* 6. Rodapé (Footer) */
   footer {
-    margin-left: -20px; /* Sincroniza as margens negativas com o body */
-    margin-right: -20px;
     padding-top: 10px;
-    width: 450px; /* Garante que o footer ocupe toda a largura da tela */
+    width: 600px; /* Garante que o footer ocupe toda a largura da tela */
+
   }
 
   .final-site {
