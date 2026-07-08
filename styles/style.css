@@ -176,7 +176,7 @@ main{
 }
 
 
-.fundinho{
+.fundinho {
   background-color:#080816;
   background-image:
   linear-gradient(
@@ -652,7 +652,7 @@ footer {
 
   .menu li a {
     padding: 8px 12px; /* Diminui o botão do menu */
-    font-size: 14px;
+    font-size: 25px;
   }
 
   /* 3. Ajustes do Bloco Principal (Main / Sessão 1) */
@@ -661,6 +661,9 @@ footer {
     flex-direction: column; /* Empilha texto e foto */
     align-items: center;
     justify-content: center;
+  }
+  .fundinho {
+    width: 500px;
   }
 
   #text {
@@ -734,8 +737,8 @@ footer {
   }
 
   .titulo3 {
-    width: 90%; /* Deixa o card com efeito de vidro maior no celular */
-    margin: 20px auto;
+    width: 100%; /* Deixa o card com efeito de vidro maior no celular */
+    margin: 20px;
     font-size: 16px;
   }
 
@@ -788,11 +791,154 @@ footer {
   /* 6. Rodapé (Footer) */
   footer {
     padding-top: 10px;
+    padding: 0 20px 0; /* Ajusta o padding para caber no celular */
     width: 600px; /* Garante que o footer ocupe toda a largura da tela */
 
   }
 
   .final-site {
     width: 100%; /* Ajusta a largura da caixinha do rodapé */
+  }
+}
+
+/* =======================================
+   ESTILOS PARA CELULAR DEITADO (LANDSCAPE)
+   ======================================= */
+@media (min-width: 441px) and (max-width: 932px) and (orientation: landscape) {
+
+  /* 1. Ajustes Gerais do Corpo */
+  body {
+    margin: 0 !important;
+    padding: 0 30px !important;
+    width: 100% !important;
+    margin-left: 0 !important;  /* Zera a margem de -80px do PC */
+    margin-right: 0 !important; /* Zera a margem de -80px do PC */
+  }
+
+  /* 2. Topo e Menu */
+  header {
+    position: absolute !important; /* Evita que o menu ocupe metade da tela deitada ao rolar */
+    width: 100% !important;
+    margin: 0 -30px !important;
+    padding: 10px 30px !important;
+    
+  }
+
+  nav {
+    flex-direction: row !important; /* Mantém logo e menu lado a lado para economizar altura */
+    justify-content: space-between !important;
+  }
+
+  
+
+  .menu {
+    margin-top: 0 !important;
+  }
+
+  .menu li a {
+    font-size: 20px !important;
+  }
+
+  /* 3. Primeira Sessão (Main) - Texto na esquerda, foto na direita */
+  main {
+    margin-top: 100px !important;
+    flex-direction: row !important; /* Lado a lado aproveita melhor a tela deitada */
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  #text {
+    width: 55% !important;
+    text-align: left !important;
+  }
+
+  #oi, .meu-nome, .sobrenome, h1 {
+    text-align: left !important;
+    font-size: 32px !important; /* Diminui para não sumir na altura */
+  }
+
+  p {
+    text-align: left !important;
+    font-size: 15px !important;
+  }
+
+  .botao {
+    flex-direction: row !important; /* Botões lado a lado */
+    justify-content: flex-start !important;
+  }
+
+  #foto {
+    width: 180px !important; /* Reduz a foto para caber na altura da tela deitada */
+    margin: 0 !important;
+  }
+
+  /* 4. SEGUNDA SESSÃO (O que você pediu: Texto em cima, blocos lado a lado) */
+  .section-part2 {
+    flex-direction: column !important; /* Força o conjunto a empilhar verticalmente */
+    width: 100% !important;
+    padding: 40px 0 !important;
+  }
+
+  .textoefundo {
+    flex-direction: column !important; /* Texto em cima, container de blocos embaixo */
+    width: 100% !important;
+  }
+
+  .titulo3 {
+    width: 100% !important; /* Texto ocupa toda a largura em cima */
+    margin: 0 auto 30px auto !important; /* Margem embaixo para empurrar os blocos */
+    text-align: center !important;
+  }
+
+  .stats-container {
+    flex-direction: row !important; /* OS DOIS BLOCOS FICAM LADO A LADO */
+    justify-content: center !important;
+    gap: 20px !important; /* Espaço elegante entre os dois */
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .stat-card {
+    flex: 1 !important; /* Divide o espaço igualmente entre os dois cards */
+    max-width: 250px !important; /* Limita a largura para não ficarem esticados */
+    text-align: center !important;
+    padding: 15px !important;
+  }
+
+  /* 5. Terceira Sessão (Cards de Projetos) */
+  .container {
+    flex-direction: row !important; /* Deixa os cards de projeto lado a lado também */
+    flex-wrap: wrap !important; /* Se não couber os 3, o último desce com elegância */
+    justify-content: center !important;
+    gap: 20px !important;
+  }
+
+  .card {
+    max-width: 220px !important; /* Diminui os cards para caberem deitado */
+  }
+
+  /* 6. Rodapé (Footer) */
+  footer {
+    padding: 20px 0 !important;
+    width: 100% !important; 
+    margin-left: 0 !important;  /* Zera a margem de -80px do PC */
+    margin-right: 0 !important; /* Zera a margem de -80px do PC */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .final-site {
+    width: 100% !important; 
+    max-width: 100% !important; /* Destrói os 400px fixos do PC */
+    display: block !important;  /* Muda para block para o text-align funcionar */
+    text-align: center !important; 
+    padding: 0 15px !important;
+  }
+
+  .final-site p {
+    text-align: center !important; /* Garante que o texto dentro do parágrafo centralize */
+    width: 100% !important;
+    margin: 0 auto !important;
   }
 }
