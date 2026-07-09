@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  max-width: 100%;
+  max-width: 1800px;
   margin: 0 80px 0;
   color: white;
   background: #050816;
@@ -594,7 +594,6 @@ footer {
 
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
@@ -808,137 +807,174 @@ footer {
 
   /* 1. Ajustes Gerais do Corpo */
   body {
-    margin: 0 !important;
-    padding: 0 30px !important;
-    width: 100% !important;
-    margin-left: 0 !important;  /* Zera a margem de -80px do PC */
-    margin-right: 0 !important; /* Zera a margem de -80px do PC */
+    margin: 0;
+    padding: 0 30px;
+    width: 100%;
+    margin-left: 0;  /* Zera a margem de -80px do PC */
+    margin-right: 0; /* Zera a margem de -80px do PC */
   }
 
   /* 2. Topo e Menu */
   header {
-    position: absolute !important; /* Evita que o menu ocupe metade da tela deitada ao rolar */
-    width: 100% !important;
-    margin: 0 -30px !important;
-    padding: 10px 30px !important;
+    position: absolute; /* Evita que o menu ocupe metade da tela deitada ao rolar */
+    width: 100%;
+    margin: 0 -30px;
+    padding: 10px 30px;
     
   }
 
   nav {
-    flex-direction: row !important; /* Mantém logo e menu lado a lado para economizar altura */
-    justify-content: space-between !important;
+    flex-direction: row; /* Mantém logo e menu lado a lado para economizar altura */
+    justify-content: space-between;
   }
 
   
 
   .menu {
-    margin-top: 0 !important;
+    margin-top: 0;
   }
 
   .menu li a {
-    font-size: 20px !important;
+    font-size: 20px;
   }
 
   /* 3. Primeira Sessão (Main) - Texto na esquerda, foto na direita */
   main {
-    margin-top: 100px !important;
-    flex-direction: row !important; /* Lado a lado aproveita melhor a tela deitada */
-    justify-content: space-between !important;
-    align-items: center !important;
+    margin-top: 100px;
+    flex-direction: row; /* Lado a lado aproveita melhor a tela deitada */
+    justify-content: space-between;
+    align-items: center;
   }
 
   #text {
-    width: 55% !important;
-    text-align: left !important;
+    width: 55%;
+    text-align: left;
   }
 
   #oi, .meu-nome, .sobrenome, h1 {
-    text-align: left !important;
-    font-size: 32px !important; /* Diminui para não sumir na altura */
+    text-align: left;
+    font-size: 32px; /* Diminui para não sumir na altura */
   }
 
   p {
-    text-align: left !important;
-    font-size: 15px !important;
+    text-align: left;
+    font-size: 15px;
   }
 
   .botao {
-    flex-direction: row !important; /* Botões lado a lado */
-    justify-content: flex-start !important;
+    flex-direction: row; /* Botões lado a lado */
+    justify-content: flex-start;
   }
 
   #foto {
-    width: 180px !important; /* Reduz a foto para caber na altura da tela deitada */
-    margin: 0 !important;
+    width: 180px; /* Reduz a foto para caber na altura da tela deitada */
+    margin: 0;
   }
 
   /* 4. SEGUNDA SESSÃO (O que você pediu: Texto em cima, blocos lado a lado) */
   .section-part2 {
-    flex-direction: column !important; /* Força o conjunto a empilhar verticalmente */
-    width: 100% !important;
-    padding: 40px 0 !important;
+    flex-direction: column; /* Força o conjunto a empilhar verticalmente */
+    width: 100%;
+    padding: 40px 0;
   }
 
   .textoefundo {
-    flex-direction: column !important; /* Texto em cima, container de blocos embaixo */
-    width: 100% !important;
+    flex-direction: column; /* Texto em cima, container de blocos embaixo */
+    width: 100%;
   }
 
   .titulo3 {
-    width: 100% !important; /* Texto ocupa toda a largura em cima */
-    margin: 0 auto 30px auto !important; /* Margem embaixo para empurrar os blocos */
-    text-align: center !important;
+    width: 100%; /* Texto ocupa toda a largura em cima */
+    margin: 0 auto 30px auto; /* Margem embaixo para empurrar os blocos */
+    text-align: center;
   }
 
   .stats-container {
-    flex-direction: row !important; /* OS DOIS BLOCOS FICAM LADO A LADO */
-    justify-content: center !important;
-    gap: 20px !important; /* Espaço elegante entre os dois */
-    width: 100% !important;
-    padding: 0 !important;
+    flex-direction: row; /* OS DOIS BLOCOS FICAM LADO A LADO */
+    justify-content: center;
+    gap: 20px; /* Espaço elegante entre os dois */
+    width: 100%;
+    padding: 0;
   }
 
   .stat-card {
-    flex: 1 !important; /* Divide o espaço igualmente entre os dois cards */
-    max-width: 250px !important; /* Limita a largura para não ficarem esticados */
-    text-align: center !important;
-    padding: 15px !important;
+    flex: 1; /* Divide o espaço igualmente entre os dois cards */
+    max-width: 250px; /* Limita a largura para não ficarem esticados */
+    text-align: center;
+    padding: 15px;
   }
 
   /* 5. Terceira Sessão (Cards de Projetos) */
   .container {
-    flex-direction: row !important; /* Deixa os cards de projeto lado a lado também */
-    flex-wrap: wrap !important; /* Se não couber os 3, o último desce com elegância */
-    justify-content: center !important;
-    gap: 20px !important;
+    flex-direction: row; /* Deixa os cards de projeto lado a lado também */
+    flex-wrap: wrap; /* Se não couber os 3, o último desce com elegância */
+    justify-content: center;
+    gap: 20px;
   }
 
   .card {
-    max-width: 220px !important; /* Diminui os cards para caberem deitado */
+    max-width: 220px; /* Diminui os cards para caberem deitado */
   }
 
   /* 6. Rodapé (Footer) */
   footer {
-    padding: 20px 0 !important;
-    width: 100% !important; 
-    margin-left: 0 !important;  /* Zera a margem de -80px do PC */
-    margin-right: 0 !important; /* Zera a margem de -80px do PC */
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    padding: 20px 0;
+    width: 100%; 
+    margin-left: 0;  /* Zera a margem de -80px do PC */
+    margin-right: 0; /* Zera a margem de -80px do PC */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .final-site {
-    width: 100% !important; 
-    max-width: 100% !important; /* Destrói os 400px fixos do PC */
-    display: block !important;  /* Muda para block para o text-align funcionar */
-    text-align: center !important; 
-    padding: 0 15px !important;
+    width: 100%; 
+    max-width: 100%; /* Destrói os 400px fixos do PC */
+    display: block;  /* Muda para block para o text-align funcionar */
+    text-align: center; 
+    padding: 0 15px;
   }
 
   .final-site p {
-    text-align: center !important; /* Garante que o texto dentro do parágrafo centralize */
-    width: 100% !important;
-    margin: 0 auto !important;
+    text-align: center; /* Garante que o texto dentro do parágrafo centralize */
+    width: 100%;
+    margin: 0 auto;
   }
+}
+
+@media (min-width: 796px) and (max-width: 1514px) {
+  /* Ajustes específicos para telas de celular deitadas maiores */
+ 
+
+  .section-part2 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column; /* Mantém o layout vertical */
+   width: 100%;
+
+  }
+
+  .textoefundo {
+    text-align: center; 
+    width: 60%;
+
+  }
+
+  .titulo3 {
+    text-align: center;
+  }
+
+  .stats-container {
+    flex-direction: row; /* Mantém os cards lado a lado */
+    justify-content: center;
+    gap: 80px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .stat-card {
+    width: 120%; /* Ajusta a largura dos cards para telas maiores */
+}
+
 }
